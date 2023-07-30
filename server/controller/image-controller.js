@@ -8,7 +8,7 @@ export const uploadImage= async (request , responce ) =>{
     try{
         const file = await fileSchemaAndModel.create(fileobj); // It save data in mongodb
         console.log(file);
-        responce.status(200).json({path : `http://localhost:8000/file/${file._id}` })
+        responce.status(200).json({path : `https://filesx-1gd1.onrender.com/file/${file._id}` })
     }
     catch(error){
         console.log("dsjdnsdjsjs Emergency");
